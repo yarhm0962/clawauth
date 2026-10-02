@@ -1,0 +1,6 @@
+{
+  "name": "Forge",
+  "description": "Monochrome Lua script registry, custom domain loadstring generator, and remote script execution API.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

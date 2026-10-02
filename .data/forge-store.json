@@ -1,0 +1,442 @@
+{
+  "apiKey": "frg_live_88f92d41c0b34e719a25",
+  "scripts": [
+    {
+      "id": "scr_1",
+      "title": "Nebula UI Library Core",
+      "slug": "nebula-ui",
+      "description": "Minimalist monochrome windowing & tab component library for Luau client environments.",
+      "domain": "api.forge.com",
+      "visibility": "public",
+      "accessKey": "frg_key_9a82f10c4e",
+      "version": "v1.4.0",
+      "pinned": true,
+      "pulls": 1291,
+      "executions": 414,
+      "bytes": 565,
+      "createdAt": "2026-09-14T12:00:00Z",
+      "updatedAt": "2026-10-01T18:17:22.155Z",
+      "code": "-- Nebula UI Core v1.4.0\nlocal Nebula = {}\nNebula.Version = \"1.4.0\"\nNebula.Theme = \"MonochromeDark\"\n\nfunction Nebula.CreateWindow(title)\n    print(\"[Nebula] Initializing window container: \" .. tostring(title))\n    local win = {\n        Title = title or \"Forge Workspace\",\n        Tabs = {},\n        Active = true\n    }\n    print(\"[Nebula] Mounted surface with Theme=\" .. Nebula.Theme)\n    return win\nend\n\nlocal session = Nebula.CreateWindow(\"Nebula Command Suite\")\nprint(\"[Nebula] Ready in \" .. tostring(math.floor(os.clock() * 1000)) .. \"ms\")\nreturn Nebula.Version",
+      "versions": [
+        {
+          "version": "v1.4.0",
+          "note": "Added window state return and latency trace",
+          "createdAt": "2026-10-01T08:15:00Z",
+          "bytes": 642,
+          "code": "-- Nebula UI Core v1.4.0\nlocal Nebula = {}\nNebula.Version = \"1.4.0\"\nNebula.Theme = \"MonochromeDark\"\n\nfunction Nebula.CreateWindow(title)\n    print(\"[Nebula] Initializing window container: \" .. tostring(title))\n    local win = {\n        Title = title or \"Forge Workspace\",\n        Tabs = {},\n        Active = true\n    }\n    print(\"[Nebula] Mounted surface with Theme=\" .. Nebula.Theme)\n    return win\nend\n\nlocal session = Nebula.CreateWindow(\"Nebula Command Suite\")\nprint(\"[Nebula] Ready in \" .. tostring(math.floor(os.clock() * 1000)) .. \"ms\")\nreturn Nebula.Version"
+        },
+        {
+          "version": "v1.3.0",
+          "note": "Initial public release of monochrome windowing kit",
+          "createdAt": "2026-09-19T16:30:00Z",
+          "bytes": 418,
+          "code": "-- Nebula UI Core v1.3.0\nlocal Nebula = {}\nNebula.Version = \"1.3.0\"\nprint(\"[Nebula] Loaded v1.3.0\")\nreturn Nebula.Version"
+        }
+      ],
+      "loaderId": "9a82f10c4e7b3d128f41a0c9",
+      "protection": {
+        "autoObfuscate": true,
+        "controlFlowFlattening": true,
+        "antiTamper": true,
+        "antiEnvLogs": true,
+        "stringEncryption": true,
+        "junkOpcodes": true
+      },
+      "obfuscatedCode": "--[[\n    --------------------------------------------------------------------\n    Protected by ForgeVM v4.2 -- Virtual Machine & Control-Flow Shield\n    Loader ID : files/v3/loaders/9a82f10c4e7b3d128f41a0c9.lua\n    Domain    : api.forge.com\n    Guards    : FORGE-VM-V4 | CF-FLATTEN | ANTI-TAMPER | ANTI-ENV-LOGS | CONST-CIPHER | OPAQUE-JUNK\n    VM Arch   : Register File + Flattened State Dispatcher (15 Opcodes)\n    Signature : 0x18A5BF25\n    --------------------------------------------------------------------\n]]\nreturn(function(...)\n    local _0xBF25=36;local _0xS18A=7;local _0xLBF2=2039;local _0x18A5={\n        88,95,89,142,172,176,202,200,196,138,198,193,159,201,252,6,0,194,31,225,229,242,\n        243,252,221,70,80,75,80,98,29,82,112,116,142,140,136,78,114,92,190,199,91,166,\n        196,200,226,224,220,176,223,245,9,17,14,27,33,218,254,232,241,7,11,24,25,34,\n        27,10,85,115,119,145,143,139,95,140,167,171,186,185,123,159,137,146,196,237,243,251,\n        246,2,19,23,28,27,1,37,61,61,251,234,241,84,106,106,102,126,122,135,141,70,\n        123,153,157,183,181,177,133,161,215,209,212,238,230,223,248,4,1,19,34,218,45,41,\n        59,58,58,5,237,10,17,24,31,118,127,125,137,150,81,82,146,140,170,174,200,198,\n        194,197,143,191,235,237,255,251,250,12,16,40,30,42,42,234,72,65,77,74,92,107,\n        27,101,120,126,139,127,142,154,152,172,123,104,113,118,139,146,139,230,232,243,251,0,\n        254,10,10,210,37,33,51,50,50,253,4,236,9,16,23,30,113,123,118,123,141,72,\n        166,159,171,100,136,114,212,106,135,142,149,156,163,170,177,184,243,15,33,32,32,226,\n        6,240,75,71,89,88,88,26,112,122,47,56,99,147,157,153,158,96,158,189,199,199,\n        214,218,210,219,228,168,185,158,187,194,201,208,215,222,229,236,39,59,67,91,15,51,\n        29,127,136,62,35,64,71,78,85,92,99,106,113,153,194,218,214,234,224,162,198,176,\n        11,16,26,17,189,218,225,232,239,83,231,4,11,18,25,112,121,119,131,144,75,76,\n        140,134,164,168,194,192,188,191,137,189,230,243,243,0,248,254,193,27,36,40,35,37,\n        46,55,249,87,80,98,93,28,87,114,118,133,132,99,79,84,105,112,105,158,188,192,\n        218,216,212,168,213,240,244,3,2,205,181,210,217,224,231,64,58,80,88,92,95,24,\n        118,111,123,30,128,144,141,58,65,170,180,175,180,198,129,219,212,233,240,237,250,0,\n        185,221,199,252,26,30,56,54,50,6,34,88,82,85,111,103,96,121,133,130,148,163,\n        91,92,143,173,177,203,201,197,139,181,232,237,244,239,3,0,195,253,38,33,51,43,\n        239,253,229,82,91,89,101,114,45,46,110,104,134,138,164,162,158,161,107,164,190,193,\n        203,231,149,229,241,170,179,184,205,212,205,40,42,53,61,66,64,76,76,20,96,91,\n        117,112,61,124,137,147,154,164,97,175,186,124,184,200,210,205,220,160,168,166,183,180,\n        204,210,217,224,224,231,229,250,1,250,3,85,98,24,38,14,125,119,141,149,153,156,\n        85,138,168,172,198,196,192,148,195,217,237,245,242,255,5\n    };\n    local _VM_RBF = {}\n    local _VM_OPA5 = {\n        {1, 130, 218},\n        {2, 218, 335},\n        {3, 335, 419},\n        {4, 419, 529},\n        {5, 529, 0}\n    }\n    local _CF_18 = 130\n    local _steps = 0\n    while _CF_18 ~= 0 do\n        _steps = _steps + 1\n        if _steps > 32 then\n            error(\"[ForgeVM] State machine trap: dispatch limit exceeded\")\n        end\n        if _CF_18 == 130 then\n            if type(getgenv) == \"function\" then\n                local _ok, _g = pcall(getgenv)\n                if _ok and type(_g) == \"table\" and (_g.__HTTP_SPY or _g.__ENV_LOGGER or _g.HttpSpy or _g.SimpleSpy or _g.HookSpy or _g.Hydroxide) then\n                    error(\"[Forge Shield] Anti-Env Violation: Environment logger detected in getgenv()\")\n                end\n            end\n            if type(_G) == \"table\" and (_G.__HTTP_SPY or _G.__ENV_LOGGER or _G.HttpSpy or _G.SimpleSpy) then\n                error(\"[Forge Shield] Anti-Env Violation: Global environment logger detected\")\n            end\n            if type(islclosure) == \"function\" then\n                local _ok1, _h1 = pcall(islclosure, string.char)\n                local _ok2, _h2 = pcall(islclosure, table.concat)\n                local _ok3, _h3 = pcall(islclosure, pcall)\n                if (_ok1 and _h1) or (_ok2 and _h2) or (_ok3 and _h3) then\n                    error(\"[Forge Shield] Anti-Env Violation: Hooked native C function detected\")\n                end\n            end\n            _CF_18 = 218\n        elseif _CF_18 == 218 then\n            if (_0xBF25 * 37 + _0xS18A * 101) ~= _0xLBF2 then\n                error(\"[Forge Shield] Anti-Tamper Violation: VM key/salt constants modified\")\n            end\n            local _sum = 0\n            for _i = 1, #_0x18A5 do\n                _sum = (_sum + _0x18A5[_i] * ((_i % 7) + 1) + (_i * 13)) % 1000000007\n            end\n            if _sum ~= 2382148 or #_0x18A5 ~= 565 then\n                error(\"[Forge Shield] Anti-Tamper Violation: Bytecode checksum mismatch (0x18A5BF25)\")\n            end\n            _CF_18 = 335\n        elseif _CF_18 == 335 then\n            _VM_RBF[1] = (_0xBF25 * 31 + _0xS18A) % 256\n            _VM_RBF[2] = #_VM_OPA5 * 7\n            if _VM_RBF[1] < 0 or _VM_RBF[2] ~= 35 then\n                _CF_18 = 638\n            else\n                _CF_18 = 419\n            end\n        elseif _CF_18 == 419 then\n            local _out = {}\n            for _i = 1, #_0x18A5 do\n                local _b = (_0x18A5[_i] - _0xBF25 - (_i * _0xS18A)) % 256\n                if _b < 0 then _b = _b + 256 end\n                _out[_i] = string.char(_b)\n            end\n            _VM_RBF[15] = table.concat(_out)\n            for _k = 1, #_out do _out[_k] = nil end\n            _CF_18 = 529\n        elseif _CF_18 == 638 then\n            error(\"[ForgeVM] Opaque predicate state violation\")\n        elseif _CF_18 == 529 then\n            _CF_18 = 0\n            local _src = _VM_RBF[15]\n            _VM_RBF[15] = nil\n            if type(_src) ~= \"string\" or #_src == 0 or string.sub(_src, 1, 1) == \"<\" then\n                error(\"[ForgeVM] Corrupted VM payload\")\n            end\n            local _ld = loadstring or load\n            local _fn, _err = _ld(_src)\n            _src = nil\n            if not _fn then\n                error(\"[Forge Shield] VM Trap: \" .. tostring(_err))\n            end\n            return _fn(...)\n        end\n    end\nend)(...)",
+      "checksumHash": "18A5BF25",
+      "obfuscatedBytes": 6279
+    },
+    {
+      "id": "scr_2",
+      "title": "Keybind Command Dispatcher",
+      "slug": "cmd-dispatcher",
+      "description": "Zero-latency command bar parser and hotkey listener with custom alias registration.",
+      "domain": "api.forge.com",
+      "visibility": "public",
+      "accessKey": "frg_key_3b71d92a11",
+      "version": "v2.1.0",
+      "pinned": true,
+      "pulls": 841,
+      "executions": 279,
+      "bytes": 548,
+      "createdAt": "2026-09-18T09:30:00Z",
+      "updatedAt": "2026-09-30T21:40:00Z",
+      "code": "-- Keybind Command Dispatcher v2.1.0\nlocal Dispatcher = {}\nlocal registered = 0\n\nfunction Dispatcher.Bind(hotkey, actionName)\n    registered = registered + 1\n    print(\"[Dispatcher] Bound [\" .. hotkey .. \"] -> \" .. actionName)\nend\n\nDispatcher.Bind(\"RightShift\", \"ToggleConsole\")\nDispatcher.Bind(\"Ctrl+K\", \"QuickPalette\")\nDispatcher.Bind(\"F8\", \"ReloadModules\")\n\nprint(\"[Dispatcher] Active bindings registered: \" .. tostring(registered))\nreturn \"Bindings: \" .. tostring(registered)",
+      "versions": [
+        {
+          "version": "v2.1.0",
+          "note": "Added F8 reload module shortcut binding",
+          "createdAt": "2026-09-30T21:40:00Z",
+          "bytes": 548,
+          "code": "-- Keybind Command Dispatcher v2.1.0\nlocal Dispatcher = {}\nlocal registered = 0\n\nfunction Dispatcher.Bind(hotkey, actionName)\n    registered = registered + 1\n    print(\"[Dispatcher] Bound [\" .. hotkey .. \"] -> \" .. actionName)\nend\n\nDispatcher.Bind(\"RightShift\", \"ToggleConsole\")\nDispatcher.Bind(\"Ctrl+K\", \"QuickPalette\")\nDispatcher.Bind(\"F8\", \"ReloadModules\")\n\nprint(\"[Dispatcher] Active bindings registered: \" .. tostring(registered))\nreturn \"Bindings: \" .. tostring(registered)"
+        }
+      ],
+      "loaderId": "3b71d92a116e04f8c520b1e7",
+      "protection": {
+        "autoObfuscate": true,
+        "controlFlowFlattening": true,
+        "antiTamper": true,
+        "antiEnvLogs": true,
+        "stringEncryption": true,
+        "junkOpcodes": true
+      },
+      "obfuscatedCode": "--[[\n    --------------------------------------------------------------------\n    Protected by ForgeVM v4.2 -- Virtual Machine & Control-Flow Shield\n    Loader ID : files/v3/loaders/3b71d92a116e04f8c520b1e7.lua\n    Domain    : api.forge.com\n    Guards    : FORGE-VM-V4 | CF-FLATTEN | ANTI-TAMPER | ANTI-ENV-LOGS | CONST-CIPHER | OPAQUE-JUNK\n    VM Arch   : Register File + Flattened State Dispatcher (15 Opcodes)\n    Signature : 0xD0EA0730\n    --------------------------------------------------------------------\n]]\nreturn(function(...)\n    local _0x0730=126;local _0xSD0E=4;local _0xL073=5066;local _0xD0EA={\n        175,179,170,217,247,15,252,7,16,10,202,241,33,35,39,31,48,42,234,18,59,73,\n        74,63,86,73,82,83,100,22,112,48,48,55,56,62,28,130,137,129,131,146,74,114,\n        155,169,170,159,182,169,178,179,196,118,151,126,221,227,116,218,225,217,219,234,162,248,\n        239,245,251,9,14,3,20,11,14,206,239,214,234,200,204,44,63,60,53,74,67,77,\n        80,6,46,87,101,102,91,114,101,110,111,128,64,88,131,140,134,78,146,157,166,161,\n        159,183,110,102,171,177,198,191,201,204,176,199,215,211,155,128,154,158,162,166,252,243,\n        249,255,13,18,7,24,15,18,210,243,218,48,39,45,51,65,70,59,76,67,70,6,\n        21,14,35,0,26,30,34,38,122,128,123,132,142,70,68,129,110,151,165,166,155,178,\n        165,174,175,192,175,118,156,205,215,212,206,142,205,152,154,172,176,166,242,253,6,1,\n        255,23,194,212,216,206,212,19,218,235,0,230,236,238,0,4,250,63,69,90,83,93,\n        96,68,91,107,103,47,20,115,128,122,36,40,102,143,157,158,147,170,157,166,167,184,\n        120,144,187,196,190,134,132,184,211,213,218,234,205,230,235,236,254,176,190,182,188,242,\n        17,13,17,26,23,249,41,44,53,53,54,51,244,255,228,34,75,89,90,79,102,89,\n        98,99,116,52,76,119,128,122,66,64,101,154,156,154,93,129,92,106,98,104,155,195,\n        187,185,197,174,195,210,207,226,230,219,156,167,140,202,243,1,2,247,14,1,10,11,\n        28,220,244,31,40,34,234,232,16,6,244,2,250,0,52,75,86,93,83,90,71,109,\n        102,123,118,115,133,56,67,40,44,150,156,151,160,170,98,96,157,138,179,193,194,183,\n        206,193,202,203,220,203,146,183,221,242,235,252,239,174,244,255,8,2,11,20,17,33,\n        210,40,31,37,43,57,62,51,68,59,62,24,2,8,10,28,32,22,110,109,117,122,\n        124,119,128,125,66,144,135,141,147,161,166,155,172,163,166,111,115,88,196,187,206,211,\n        212,212,138,144,180,223,232,226,235,244,241,1,204,182,188,190,208,212,202,34,33,41,\n        46,48,43,52,49,246,68,59,65,71,85,90,79,96,87,90,35\n    };\n    local _VM_R07 = {}\n    local _VM_OPEA = {\n        {1, 103, 211},\n        {2, 211, 323},\n        {3, 323, 436},\n        {4, 436, 506},\n        {5, 506, 0}\n    }\n    local _CF_D0 = 103\n    local _steps = 0\n    while _CF_D0 ~= 0 do\n        _steps = _steps + 1\n        if _steps > 32 then\n            error(\"[ForgeVM] State machine trap: dispatch limit exceeded\")\n        end\n        if _CF_D0 == 103 then\n            if type(getgenv) == \"function\" then\n                local _ok, _g = pcall(getgenv)\n                if _ok and type(_g) == \"table\" and (_g.__HTTP_SPY or _g.__ENV_LOGGER or _g.HttpSpy or _g.SimpleSpy or _g.HookSpy or _g.Hydroxide) then\n                    error(\"[Forge Shield] Anti-Env Violation: Environment logger detected in getgenv()\")\n                end\n            end\n            if type(_G) == \"table\" and (_G.__HTTP_SPY or _G.__ENV_LOGGER or _G.HttpSpy or _G.SimpleSpy) then\n                error(\"[Forge Shield] Anti-Env Violation: Global environment logger detected\")\n            end\n            if type(islclosure) == \"function\" then\n                local _ok1, _h1 = pcall(islclosure, string.char)\n                local _ok2, _h2 = pcall(islclosure, table.concat)\n                local _ok3, _h3 = pcall(islclosure, pcall)\n                if (_ok1 and _h1) or (_ok2 and _h2) or (_ok3 and _h3) then\n                    error(\"[Forge Shield] Anti-Env Violation: Hooked native C function detected\")\n                end\n            end\n            _CF_D0 = 211\n        elseif _CF_D0 == 211 then\n            if (_0x0730 * 37 + _0xSD0E * 101) ~= _0xL073 then\n                error(\"[Forge Shield] Anti-Tamper Violation: VM key/salt constants modified\")\n            end\n            local _sum = 0\n            for _i = 1, #_0xD0EA do\n                _sum = (_sum + _0xD0EA[_i] * ((_i % 7) + 1) + (_i * 13)) % 1000000007\n            end\n            if _sum ~= 1739107 or #_0xD0EA ~= 479 then\n                error(\"[Forge Shield] Anti-Tamper Violation: Bytecode checksum mismatch (0xD0EA0730)\")\n            end\n            _CF_D0 = 323\n        elseif _CF_D0 == 323 then\n            _VM_R07[1] = (_0x0730 * 31 + _0xSD0E) % 256\n            _VM_R07[2] = #_VM_OPEA * 7\n            if _VM_R07[1] < 0 or _VM_R07[2] ~= 35 then\n                _CF_D0 = 632\n            else\n                _CF_D0 = 436\n            end\n        elseif _CF_D0 == 436 then\n            local _out = {}\n            for _i = 1, #_0xD0EA do\n                local _b = (_0xD0EA[_i] - _0x0730 - (_i * _0xSD0E)) % 256\n                if _b < 0 then _b = _b + 256 end\n                _out[_i] = string.char(_b)\n            end\n            _VM_R07[15] = table.concat(_out)\n            for _k = 1, #_out do _out[_k] = nil end\n            _CF_D0 = 506\n        elseif _CF_D0 == 632 then\n            error(\"[ForgeVM] Opaque predicate state violation\")\n        elseif _CF_D0 == 506 then\n            _CF_D0 = 0\n            local _src = _VM_R07[15]\n            _VM_R07[15] = nil\n            if type(_src) ~= \"string\" or #_src == 0 or string.sub(_src, 1, 1) == \"<\" then\n                error(\"[ForgeVM] Corrupted VM payload\")\n            end\n            local _ld = loadstring or load\n            local _fn, _err = _ld(_src)\n            _src = nil\n            if not _fn then\n                error(\"[Forge Shield] VM Trap: \" .. tostring(_err))\n            end\n            return _fn(...)\n        end\n    end\nend)(...)",
+      "checksumHash": "D0EA0730",
+      "obfuscatedBytes": 5909
+    },
+    {
+      "id": "scr_3",
+      "title": "Frame Pacing & FPS Profiler",
+      "slug": "fps-profiler",
+      "description": "Lightweight frame-time histogram collector and micro-stutter detector.",
+      "domain": "cdn.forge.sh",
+      "visibility": "public",
+      "accessKey": "frg_key_7c41e88b05",
+      "version": "v1.0.2",
+      "pinned": false,
+      "pulls": 512,
+      "executions": 194,
+      "bytes": 514,
+      "createdAt": "2026-09-21T15:10:00Z",
+      "updatedAt": "2026-09-29T11:05:00Z",
+      "code": "-- Frame Pacing & FPS Profiler v1.0.2\nlocal targetFps = 144\nlocal frameBudgetMs = 1000 / targetFps\nprint(\"[Profiler] Target refresh rate: \" .. tostring(targetFps) .. \"Hz\")\nprint(\"[Profiler] Frame time budget: \" .. tostring(math.floor(frameBudgetMs * 100) / 100) .. \"ms\")\n\nlocal sampleSum = 0\nfor i = 1, 5 do\n    sampleSum = sampleSum + 6\nend\nlocal avgFrame = sampleSum / 5\nprint(\"[Profiler] Sampled 5 frames, avg delta: \" .. tostring(avgFrame) .. \"ms (Nominal)\")\nreturn \"144Hz Locked\"",
+      "versions": [
+        {
+          "version": "v1.0.2",
+          "note": "Calibrated 144Hz frame time budget math",
+          "createdAt": "2026-09-29T11:05:00Z",
+          "bytes": 514,
+          "code": "-- Frame Pacing & FPS Profiler v1.0.2\nlocal targetFps = 144\nlocal frameBudgetMs = 1000 / targetFps\nprint(\"[Profiler] Target refresh rate: \" .. tostring(targetFps) .. \"Hz\")\nprint(\"[Profiler] Frame time budget: \" .. tostring(math.floor(frameBudgetMs * 100) / 100) .. \"ms\")\n\nlocal sampleSum = 0\nfor i = 1, 5 do\n    sampleSum = sampleSum + 6\nend\nlocal avgFrame = sampleSum / 5\nprint(\"[Profiler] Sampled 5 frames, avg delta: \" .. tostring(avgFrame) .. \"ms (Nominal)\")\nreturn \"144Hz Locked\""
+        }
+      ],
+      "loaderId": "7c41e88b05d92a34f106c8e2",
+      "protection": {
+        "autoObfuscate": true,
+        "controlFlowFlattening": true,
+        "antiTamper": true,
+        "antiEnvLogs": true,
+        "stringEncryption": true,
+        "junkOpcodes": true
+      },
+      "obfuscatedCode": "--[[\n    --------------------------------------------------------------------\n    Protected by ForgeVM v4.2 -- Virtual Machine & Control-Flow Shield\n    Loader ID : files/v3/loaders/7c41e88b05d92a34f106c8e2.lua\n    Domain    : cdn.forge.sh\n    Guards    : FORGE-VM-V4 | CF-FLATTEN | ANTI-TAMPER | ANTI-ENV-LOGS | CONST-CIPHER | OPAQUE-JUNK\n    VM Arch   : Register File + Flattened State Dispatcher (15 Opcodes)\n    Signature : 0x6018675D\n    --------------------------------------------------------------------\n]]\nreturn(function(...)\n    local _0x675D=203;local _0xS601=6;local _0xL675=8117;local _0x6018={\n        254,4,253,41,91,80,98,96,33,87,110,118,130,141,140,75,87,87,131,147,156,111,\n        165,205,208,205,214,223,222,241,165,1,194,197,205,209,219,185,33,42,36,40,57,243,\n        77,64,87,82,86,107,67,115,124,47,82,59,82,91,97,61,165,174,168,172,189,119,\n        195,213,202,220,218,189,246,235,244,248,13,236,24,203,238,215,238,243,249,255,245,10,\n        1,91,78,101,96,100,121,81,129,138,39,147,155,152,163,175,105,105,168,163,203,206,\n        203,212,221,220,239,224,169,227,246,13,8,12,33,211,43,36,43,61,54,74,69,3,\n        91,80,105,96,59,39,47,51,71,77,69,159,160,170,177,181,178,189,188,131,213,200,\n        223,218,222,243,203,251,4,192,189,209,215,207,215,3,59,233,246,221,73,81,78,89,\n        101,31,31,94,89,129,132,129,138,147,146,165,150,95,139,189,178,196,194,131,221,216,\n        226,224,161,233,2,247,0,4,25,229,209,217,221,241,247,239,73,74,84,91,95,92,\n        103,102,45,120,114,139,133,81,143,155,164,170,179,111,179,197,186,204,202,173,230,219,\n        228,232,253,220,8,187,203,199,222,227,233,232,229,250,241,8,13,19,18,15,35,41,\n        33,41,122,134,59,72,47,53,157,166,160,164,181,111,200,188,206,215,217,216,204,244,\n        242,171,206,183,205,173,15,30,39,219,42,231,10,243,10,11,5,32,17,91,108,13,\n        41,47,53,59,148,136,154,163,165,164,152,192,190,119,154,131,220,208,226,235,237,236,\n        224,8,6,191,208,203,231,193,34,49,45,217,65,74,68,72,89,19,90,117,108,81,\n        131,120,138,136,73,108,85,174,162,180,189,191,190,178,218,216,145,166,157,184,147,255,\n        7,4,15,27,213,213,20,15,55,58,55,64,73,72,91,76,21,78,98,116,125,127,\n        126,131,69,96,81,157,175,164,182,180,200,135,129,200,227,218,153,227,234,247,5,248,\n        215,195,203,207,227,233,225,59,60,70,77,81,78,89,88,31,94,121,112,85,135,124,\n        142,140,86,83,103,109,101,109,190,202,125,139,183,222,226,228,239,232,249,188,187,200,\n        175,29,22,43,50,53,55,239,247,12,21,27,53,109,25,75,116,110,124,124,129,69\n    };\n    local _VM_R67 = {}\n    local _VM_OP18 = {\n        {1, 101, 231},\n        {2, 231, 318},\n        {3, 318, 425},\n        {4, 425, 536},\n        {5, 536, 0}\n    }\n    local _CF_60 = 101\n    local _steps = 0\n    while _CF_60 ~= 0 do\n        _steps = _steps + 1\n        if _steps > 32 then\n            error(\"[ForgeVM] State machine trap: dispatch limit exceeded\")\n        end\n        if _CF_60 == 101 then\n            if type(getgenv) == \"function\" then\n                local _ok, _g = pcall(getgenv)\n                if _ok and type(_g) == \"table\" and (_g.__HTTP_SPY or _g.__ENV_LOGGER or _g.HttpSpy or _g.SimpleSpy or _g.HookSpy or _g.Hydroxide) then\n                    error(\"[Forge Shield] Anti-Env Violation: Environment logger detected in getgenv()\")\n                end\n            end\n            if type(_G) == \"table\" and (_G.__HTTP_SPY or _G.__ENV_LOGGER or _G.HttpSpy or _G.SimpleSpy) then\n                error(\"[Forge Shield] Anti-Env Violation: Global environment logger detected\")\n            end\n            if type(islclosure) == \"function\" then\n                local _ok1, _h1 = pcall(islclosure, string.char)\n                local _ok2, _h2 = pcall(islclosure, table.concat)\n                local _ok3, _h3 = pcall(islclosure, pcall)\n                if (_ok1 and _h1) or (_ok2 and _h2) or (_ok3 and _h3) then\n                    error(\"[Forge Shield] Anti-Env Violation: Hooked native C function detected\")\n                end\n            end\n            _CF_60 = 231\n        elseif _CF_60 == 231 then\n            if (_0x675D * 37 + _0xS601 * 101) ~= _0xL675 then\n                error(\"[Forge Shield] Anti-Tamper Violation: VM key/salt constants modified\")\n            end\n            local _sum = 0\n            for _i = 1, #_0x6018 do\n                _sum = (_sum + _0x6018[_i] * ((_i % 7) + 1) + (_i * 13)) % 1000000007\n            end\n            if _sum ~= 1790831 or #_0x6018 ~= 484 then\n                error(\"[Forge Shield] Anti-Tamper Violation: Bytecode checksum mismatch (0x6018675D)\")\n            end\n            _CF_60 = 318\n        elseif _CF_60 == 318 then\n            _VM_R67[1] = (_0x675D * 31 + _0xS601) % 256\n            _VM_R67[2] = #_VM_OP18 * 7\n            if _VM_R67[1] < 0 or _VM_R67[2] ~= 35 then\n                _CF_60 = 609\n            else\n                _CF_60 = 425\n            end\n        elseif _CF_60 == 425 then\n            local _out = {}\n            for _i = 1, #_0x6018 do\n                local _b = (_0x6018[_i] - _0x675D - (_i * _0xS601)) % 256\n                if _b < 0 then _b = _b + 256 end\n                _out[_i] = string.char(_b)\n            end\n            _VM_R67[15] = table.concat(_out)\n            for _k = 1, #_out do _out[_k] = nil end\n            _CF_60 = 536\n        elseif _CF_60 == 609 then\n            error(\"[ForgeVM] Opaque predicate state violation\")\n        elseif _CF_60 == 536 then\n            _CF_60 = 0\n            local _src = _VM_R67[15]\n            _VM_R67[15] = nil\n            if type(_src) ~= \"string\" or #_src == 0 or string.sub(_src, 1, 1) == \"<\" then\n                error(\"[ForgeVM] Corrupted VM payload\")\n            end\n            local _ld = loadstring or load\n            local _fn, _err = _ld(_src)\n            _src = nil\n            if not _fn then\n                error(\"[Forge Shield] VM Trap: \" .. tostring(_err))\n            end\n            return _fn(...)\n        end\n    end\nend)(...)",
+      "checksumHash": "6018675D",
+      "obfuscatedBytes": 5948
+    },
+    {
+      "id": "scr_4",
+      "title": "Remote State Sync Bootstrapper",
+      "slug": "remote-sync",
+      "description": "Token-authenticated configuration loader with automatic retry and fallback cache.",
+      "domain": "raw.forge.dev",
+      "visibility": "protected",
+      "accessKey": "frg_key_55d0a19f2c",
+      "version": "v1.1.0",
+      "pinned": false,
+      "pulls": 319,
+      "executions": 118,
+      "bytes": 468,
+      "createdAt": "2026-09-24T18:00:00Z",
+      "updatedAt": "2026-09-28T17:22:00Z",
+      "code": "-- Remote State Sync Bootstrapper v1.1.0\nlocal endpoint = \"https://raw.forge.dev/raw/remote-sync\"\nprint(\"[Sync] Handshake verified against \" .. endpoint)\nlocal schemaVersion = 4\nlocal syncedKeys = 18\nprint(\"[Sync] Hydrated \" .. tostring(syncedKeys) .. \" remote flags (Schema v\" .. tostring(schemaVersion) .. \")\")\nreturn \"SYNC_OK_V4\"",
+      "versions": [
+        {
+          "version": "v1.1.0",
+          "note": "Enabled key protection for staging flags",
+          "createdAt": "2026-09-28T17:22:00Z",
+          "bytes": 468,
+          "code": "-- Remote State Sync Bootstrapper v1.1.0\nlocal endpoint = \"https://raw.forge.dev/raw/remote-sync\"\nprint(\"[Sync] Handshake verified against \" .. endpoint)\nlocal schemaVersion = 4\nlocal syncedKeys = 18\nprint(\"[Sync] Hydrated \" .. tostring(syncedKeys) .. \" remote flags (Schema v\" .. tostring(schemaVersion) .. \")\")\nreturn \"SYNC_OK_V4\""
+        }
+      ],
+      "loaderId": "55d0a19f2c88e14a90b3d7f1",
+      "protection": {
+        "autoObfuscate": true,
+        "controlFlowFlattening": true,
+        "antiTamper": true,
+        "antiEnvLogs": true,
+        "stringEncryption": true,
+        "junkOpcodes": true
+      },
+      "obfuscatedCode": "--[[\n    --------------------------------------------------------------------\n    Protected by ForgeVM v4.2 -- Virtual Machine & Control-Flow Shield\n    Loader ID : files/v3/loaders/55d0a19f2c88e14a90b3d7f1.lua\n    Domain    : raw.forge.dev\n    Guards    : FORGE-VM-V4 | CF-FLATTEN | ANTI-TAMPER | ANTI-ENV-LOGS | CONST-CIPHER | OPAQUE-JUNK\n    VM Arch   : Register File + Flattened State Dispatcher (15 Opcodes)\n    Signature : 0xF008C7F3\n    --------------------------------------------------------------------\n]]\nreturn(function(...)\n    local _0xC7F3=212;local _0xSF00=8;local _0xLC7F=8652;local _0xF008={\n        9,17,12,70,97,113,123,136,129,68,127,168,157,184,177,116,175,221,218,215,156,198,\n        251,3,16,23,32,38,29,52,60,57,78,4,98,37,42,53,58,68,38,144,155,151,\n        157,176,108,185,202,200,220,227,229,242,0,180,217,196,206,28,48,56,60,71,22,19,\n        27,102,93,123,58,122,139,150,147,153,106,168,177,202,139,214,205,235,171,246,241,1,\n        11,24,17,225,47,61,58,55,254,238,92,102,101,114,128,60,62,127,127,173,170,167,\n        169,116,164,197,218,216,239,236,237,255,1,196,34,25,46,45,50,61,65,72,12,85,\n        99,101,117,130,143,152,76,86,92,114,122,116,193,210,208,228,235,237,250,8,197,174,\n        24,35,31,37,56,244,79,71,84,89,105,101,98,121,142,151,149,163,170,100,137,116,\n        144,110,216,227,223,229,248,180,15,29,26,23,33,40,23,57,85,87,12,49,28,53,\n        68,30,140,150,149,162,176,108,110,175,175,221,218,215,217,164,212,13,0,22,13,40,\n        33,40,236,246,252,18,26,20,112,115,127,136,142,141,154,155,100,183,197,194,191,201,\n        208,191,225,253,255,189,188,210,218,212,222,228,62,57,73,83,96,89,28,106,120,117,\n        131,151,76,92,143,167,180,185,201,197,140,234,158,164,186,194,188,24,27,39,48,54,\n        53,66,67,12,95,87,100,105,121,117,114,137,158,167,165,179,186,125,124,146,154,148,\n        158,173,174,189,166,22,17,40,49,54,58,244,254,55,69,66,63,99,91,95,123,122,\n        96,86\n    };\n    local _VM_RC7 = {}\n    local _VM_OP08 = {\n        {1, 109, 203},\n        {2, 203, 301},\n        {3, 301, 401},\n        {4, 401, 502},\n        {5, 502, 0}\n    }\n    local _CF_F0 = 109\n    local _steps = 0\n    while _CF_F0 ~= 0 do\n        _steps = _steps + 1\n        if _steps > 32 then\n            error(\"[ForgeVM] State machine trap: dispatch limit exceeded\")\n        end\n        if _CF_F0 == 109 then\n            if type(getgenv) == \"function\" then\n                local _ok, _g = pcall(getgenv)\n                if _ok and type(_g) == \"table\" and (_g.__HTTP_SPY or _g.__ENV_LOGGER or _g.HttpSpy or _g.SimpleSpy or _g.HookSpy or _g.Hydroxide) then\n                    error(\"[Forge Shield] Anti-Env Violation: Environment logger detected in getgenv()\")\n                end\n            end\n            if type(_G) == \"table\" and (_G.__HTTP_SPY or _G.__ENV_LOGGER or _G.HttpSpy or _G.SimpleSpy) then\n                error(\"[Forge Shield] Anti-Env Violation: Global environment logger detected\")\n            end\n            if type(islclosure) == \"function\" then\n                local _ok1, _h1 = pcall(islclosure, string.char)\n                local _ok2, _h2 = pcall(islclosure, table.concat)\n                local _ok3, _h3 = pcall(islclosure, pcall)\n                if (_ok1 and _h1) or (_ok2 and _h2) or (_ok3 and _h3) then\n                    error(\"[Forge Shield] Anti-Env Violation: Hooked native C function detected\")\n                end\n            end\n            _CF_F0 = 203\n        elseif _CF_F0 == 203 then\n            if (_0xC7F3 * 37 + _0xSF00 * 101) ~= _0xLC7F then\n                error(\"[Forge Shield] Anti-Tamper Violation: VM key/salt constants modified\")\n            end\n            local _sum = 0\n            for _i = 1, #_0xF008 do\n                _sum = (_sum + _0xF008[_i] * ((_i % 7) + 1) + (_i * 13)) % 1000000007\n            end\n            if _sum ~= 879898 or #_0xF008 ~= 332 then\n                error(\"[Forge Shield] Anti-Tamper Violation: Bytecode checksum mismatch (0xF008C7F3)\")\n            end\n            _CF_F0 = 301\n        elseif _CF_F0 == 301 then\n            _VM_RC7[1] = (_0xC7F3 * 31 + _0xSF00) % 256\n            _VM_RC7[2] = #_VM_OP08 * 7\n            if _VM_RC7[1] < 0 or _VM_RC7[2] ~= 35 then\n                _CF_F0 = 601\n            else\n                _CF_F0 = 401\n            end\n        elseif _CF_F0 == 401 then\n            local _out = {}\n            for _i = 1, #_0xF008 do\n                local _b = (_0xF008[_i] - _0xC7F3 - (_i * _0xSF00)) % 256\n                if _b < 0 then _b = _b + 256 end\n                _out[_i] = string.char(_b)\n            end\n            _VM_RC7[15] = table.concat(_out)\n            for _k = 1, #_out do _out[_k] = nil end\n            _CF_F0 = 502\n        elseif _CF_F0 == 601 then\n            error(\"[ForgeVM] Opaque predicate state violation\")\n        elseif _CF_F0 == 502 then\n            _CF_F0 = 0\n            local _src = _VM_RC7[15]\n            _VM_RC7[15] = nil\n            if type(_src) ~= \"string\" or #_src == 0 or string.sub(_src, 1, 1) == \"<\" then\n                error(\"[ForgeVM] Corrupted VM payload\")\n            end\n            local _ld = loadstring or load\n            local _fn, _err = _ld(_src)\n            _src = nil\n            if not _fn then\n                error(\"[Forge Shield] VM Trap: \" .. tostring(_err))\n            end\n            return _fn(...)\n        end\n    end\nend)(...)",
+      "checksumHash": "F008C7F3",
+      "obfuscatedBytes": 5340
+    }
+  ],
+  "domains": [
+    {
+      "id": "dom_1",
+      "hostname": "api.forge.com",
+      "isDefault": true,
+      "sslEnabled": true,
+      "corsEnabled": true,
+      "cacheTtlSeconds": 60,
+      "requestsServed": 1491,
+      "createdAt": "2026-09-12T10:00:00Z"
+    },
+    {
+      "id": "dom_2",
+      "hostname": "cdn.forge.sh",
+      "isDefault": false,
+      "sslEnabled": true,
+      "corsEnabled": true,
+      "cacheTtlSeconds": 300,
+      "requestsServed": 640,
+      "createdAt": "2026-09-15T14:20:00Z"
+    },
+    {
+      "id": "dom_3",
+      "hostname": "raw.forge.dev",
+      "isDefault": false,
+      "sslEnabled": true,
+      "corsEnabled": true,
+      "cacheTtlSeconds": 0,
+      "requestsServed": 319,
+      "createdAt": "2026-09-20T08:45:00Z"
+    },
+    {
+      "id": "dom_4",
+      "hostname": "load.vortex.io",
+      "isDefault": false,
+      "sslEnabled": true,
+      "corsEnabled": true,
+      "cacheTtlSeconds": 120,
+      "requestsServed": 195,
+      "createdAt": "2026-09-26T19:10:00Z"
+    }
+  ],
+  "logs": [
+    {
+      "id": "log_1790880186328_4aa7",
+      "timestamp": "2026-10-01T18:43:06.328Z",
+      "type": "RAW_FETCH",
+      "method": "GET",
+      "endpoint": "/files/v3/loaders/9a82f10c4e7b3d128f41a0c9.lua",
+      "domain": "api.forge.com",
+      "scriptSlug": "nebula-ui",
+      "status": 200,
+      "latencyMs": 1,
+      "bytes": 6279,
+      "detail": "Served pure Lua ForgeVM v4.2 loader (0x18A5BF25)"
+    },
+    {
+      "id": "log_1790879526743_49d5",
+      "timestamp": "2026-10-01T18:32:06.743Z",
+      "type": "RAW_FETCH",
+      "method": "GET",
+      "endpoint": "/files/v3/loaders/9a82f10c4e7b3d128f41a0c9.lua",
+      "domain": "api.forge.com",
+      "scriptSlug": "nebula-ui",
+      "status": 200,
+      "latencyMs": 1,
+      "bytes": 5171,
+      "detail": "Served ForgeVM v4.2 loader (0x3999BFBC)"
+    },
+    {
+      "id": "log_1790878717445_4836",
+      "timestamp": "2026-10-01T18:18:37.445Z",
+      "type": "RAW_FETCH",
+      "method": "GET",
+      "endpoint": "/files/v3/loaders/9a82f10c4e7b3d128f41a0c9.lua",
+      "domain": "api.forge.com",
+      "scriptSlug": "nebula-ui",
+      "status": 200,
+      "latencyMs": 1,
+      "bytes": 5171,
+      "detail": "Served ForgeVM v4.2 loader (0x3999BFBC)"
+    },
+    {
+      "id": "log_1790878642155_32b8",
+      "timestamp": "2026-10-01T18:17:22.155Z",
+      "type": "SCRIPT_DEPLOY",
+      "method": "PUT",
+      "endpoint": "/files/v3/loaders/9a82f10c4e7b3d128f41a0c9.lua",
+      "domain": "api.forge.com",
+      "scriptSlug": "nebula-ui",
+      "status": 200,
+      "latencyMs": 5,
+      "bytes": 5171,
+      "detail": "Compiled ForgeVM v4.2 (Signature 0x3999BFBC)"
+    },
+    {
+      "id": "log_1790877596349_f832",
+      "timestamp": "2026-10-01T17:59:56.349Z",
+      "type": "REMOTE_EXEC",
+      "method": "POST",
+      "endpoint": "/api/v1/execute",
+      "domain": "api.forge.com",
+      "scriptSlug": "nebula-ui",
+      "status": 200,
+      "latencyMs": 3,
+      "bytes": 475,
+      "detail": "Executed (6 log entries, 2.89ms)"
+    },
+    {
+      "id": "log_1790877589309_1a13",
+      "timestamp": "2026-10-01T17:59:49.309Z",
+      "type": "RAW_FETCH",
+      "method": "GET",
+      "endpoint": "/files/v3/loaders/9a82f10c4e7b3d128f41a0c9.lua",
+      "domain": "api.forge.com",
+      "scriptSlug": "nebula-ui",
+      "status": 200,
+      "latencyMs": 1,
+      "bytes": 3323,
+      "detail": "Served obfuscated VM loader (0x3999BFBC)"
+    },
+    {
+      "id": "log_1790877571970_28eb",
+      "timestamp": "2026-10-01T17:59:31.970Z",
+      "type": "SCRIPT_DEPLOY",
+      "method": "PUT",
+      "endpoint": "/files/v3/loaders/9a82f10c4e7b3d128f41a0c9.lua",
+      "domain": "api.forge.com",
+      "scriptSlug": "nebula-ui",
+      "status": 200,
+      "latencyMs": 5,
+      "bytes": 3323,
+      "detail": "Compiled Forge Shield VM (Signature 0x3999BFBC)"
+    },
+    {
+      "id": "log_1790876559109_b61c",
+      "timestamp": "2026-10-01T17:42:39.109Z",
+      "type": "REMOTE_EXEC",
+      "method": "POST",
+      "endpoint": "/api/v1/execute",
+      "domain": "api.forge.com",
+      "scriptSlug": "cmd-dispatcher",
+      "status": 200,
+      "latencyMs": 3,
+      "bytes": 479,
+      "detail": "Executed (6 log entries, 2.63ms)"
+    },
+    {
+      "id": "log_1790876368452_692f",
+      "timestamp": "2026-10-01T17:39:28.452Z",
+      "type": "RAW_FETCH",
+      "method": "GET",
+      "endpoint": "/files/v3/loaders/9a82f10c4e7b3d128f41a0c9.lua",
+      "domain": "api.forge.com",
+      "scriptSlug": "nebula-ui",
+      "status": 200,
+      "latencyMs": 1,
+      "bytes": 1193,
+      "detail": "Served loader 9a82f10c4e... (v1.4.0)"
+    },
+    {
+      "id": "log_1790876366682_4713",
+      "timestamp": "2026-10-01T17:39:26.682Z",
+      "type": "SCRIPT_DEPLOY",
+      "method": "PUT",
+      "endpoint": "/files/v3/loaders/9a82f10c4e7b3d128f41a0c9.lua",
+      "domain": "api.forge.com",
+      "scriptSlug": "nebula-ui",
+      "status": 200,
+      "latencyMs": 5,
+      "bytes": 565,
+      "detail": "Updated loader (565 B)"
+    },
+    {
+      "id": "log_1790874644109_dc6a",
+      "timestamp": "2026-10-01T17:10:44.109Z",
+      "type": "RAW_FETCH",
+      "method": "GET",
+      "endpoint": "/api.forge.com/raw/cmd-dispatcher",
+      "domain": "api.forge.com",
+      "scriptSlug": "cmd-dispatcher",
+      "status": 200,
+      "latencyMs": 1,
+      "bytes": 479,
+      "detail": "Served v2.1.0 via api.forge.com (raw)"
+    },
+    {
+      "id": "log_1790874626137_e108",
+      "timestamp": "2026-10-01T17:10:26.137Z",
+      "type": "REMOTE_EXEC",
+      "method": "POST",
+      "endpoint": "/api/v1/execute",
+      "domain": "api.forge.com",
+      "scriptSlug": "nebula-ui",
+      "status": 200,
+      "latencyMs": 3,
+      "bytes": 565,
+      "detail": "Executed (5 log entries, 2.68ms)"
+    },
+    {
+      "id": "log_1790874625916_824f",
+      "timestamp": "2026-10-01T17:10:25.916Z",
+      "type": "SCRIPT_DEPLOY",
+      "method": "PUT",
+      "endpoint": "/api.forge.com/raw/nebula-ui",
+      "domain": "api.forge.com",
+      "scriptSlug": "nebula-ui",
+      "status": 200,
+      "latencyMs": 5,
+      "bytes": 565,
+      "detail": "Updated script source (565 B)"
+    },
+    {
+      "id": "log_1790873737563_bf06",
+      "timestamp": "2026-10-01T16:55:37.563Z",
+      "type": "RAW_FETCH",
+      "method": "GET",
+      "endpoint": "/raw/nebula-ui",
+      "domain": "api.forge.com",
+      "scriptSlug": "nebula-ui",
+      "status": 200,
+      "latencyMs": 1,
+      "bytes": 565,
+      "detail": "Served v1.4.0 (raw)"
+    },
+    {
+      "id": "log_1",
+      "timestamp": "2026-10-01T09:28:12Z",
+      "type": "RAW_FETCH",
+      "method": "GET",
+      "endpoint": "/raw/nebula-ui",
+      "domain": "api.forge.com",
+      "scriptSlug": "nebula-ui",
+      "status": 200,
+      "latencyMs": 11,
+      "bytes": 642,
+      "detail": "Served raw Luau module via Smart Dual-Origin loader"
+    },
+    {
+      "id": "log_2",
+      "timestamp": "2026-10-01T09:24:45Z",
+      "type": "REMOTE_EXEC",
+      "method": "POST",
+      "endpoint": "/api/v1/execute",
+      "domain": "api.forge.com",
+      "scriptSlug": "cmd-dispatcher",
+      "status": 200,
+      "latencyMs": 18,
+      "bytes": 548,
+      "detail": "Executed remotely in sandbox VM (3 stdout lines)"
+    },
+    {
+      "id": "log_3",
+      "timestamp": "2026-10-01T09:19:03Z",
+      "type": "RAW_FETCH",
+      "method": "GET",
+      "endpoint": "/raw/fps-profiler",
+      "domain": "cdn.forge.sh",
+      "scriptSlug": "fps-profiler",
+      "status": 200,
+      "latencyMs": 9,
+      "bytes": 514,
+      "detail": "Served raw payload with Cache-Control: max-age=300"
+    },
+    {
+      "id": "log_4",
+      "timestamp": "2026-10-01T09:12:30Z",
+      "type": "RAW_FETCH",
+      "method": "GET",
+      "endpoint": "/raw/remote-sync",
+      "domain": "raw.forge.dev",
+      "scriptSlug": "remote-sync",
+      "status": 200,
+      "latencyMs": 14,
+      "bytes": 468,
+      "detail": "Authenticated fetch using access token frg_key_55d0..."
+    }
+  ]
+}
